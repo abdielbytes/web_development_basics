@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Multimedia Webpage</title>
+</head>
+<body>
+
+    <!-- Page Header -->
+    <header>
+        <h1>Accessible Multimedia Page</h1>
+        <p>Explore different multimedia elements like audio, video, and canvas drawings, all while keeping the webpage accessible.</p>
+    </header>
+
+    <!-- Video Section -->
+    <section id="video" aria-labelledby="video-title">
+        <h2 id="video-title">Featured Video</h2>
+        <video controls width="600" aria-label="Sample Video">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Audio Section -->
+    <section id="audio" aria-labelledby="audio-title">
+        <h2 id="audio-title">Sample Audio</h2>
+        <audio controls aria-label="Sample Audio">
+            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Canvas Section -->
+    <section id="canvas-drawing" aria-labelledby="canvas-title">
+        <h2 id="canvas-title">Canvas Drawing</h2>
+        <p>Below is a basic example of shapes drawn using the HTML5 canvas element.</p>
+        <canvas id="myCanvas" width="400" height="400" style="border:1px solid #000;"></canvas>
+
+        <script>
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+
+            // Draw a rectangle
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(50, 50, 150, 100);
+
+            // Draw a circle
+            ctx.beginPath();
+            ctx.arc(250, 150, 50, 0, Math.PI * 2);
+            ctx.fillStyle = "#00FF00";
+            ctx.fill();
+            ctx.stroke();
+        </script>
+    </section>
+
+    <!-- Accessibility Features Section -->
+    <section id="accessibility" aria-labelledby="accessibility-title">
+        <h2 id="accessibility-title">Accessibility Features</h2>
+        <p>We have used semantic HTML and ARIA attributes to enhance accessibility for screen readers and improve the overall user experience.</p>
+        <ul>
+            <li>ARIA attributes are used to label multimedia elements.</li>
+            <li>Semantic HTML elements such as <code>&lt;section&gt;</code> and <code>&lt;header&gt;</code> are used for better document structure.</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Accessible Multimedia Webpage</p>
+    </footer>
+
+</body>
+</html>
