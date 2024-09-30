@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+
+    <!-- Internal CSS for Box Model and Layout -->
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Main container */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header section */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Flexbox layout for content */
+        .content {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+        }
+
+        /* Main blog post section */
+        .main-content {
+            flex: 2;
+            padding-right: 20px;
+        }
+
+        /* Blog posts */
+        .post {
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .post h2 {
+            margin: 0;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .post p {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            flex: 1;
+            padding-left: 20px;
+            background-color: #e9ecef;
+            border-left: 2px solid #ddd;
+        }
+
+        .sidebar h2 {
+            margin: 0;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .sidebar p {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        /* Footer section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Welcome to My Blog</h1>
+        </header>
+
+        <!-- Main Content and Sidebar -->
+        <div class="content">
+            <!-- Main Content Section -->
+            <div class="main-content">
+                <div class="post">
+                    <h2>Blog Post 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius, neque ut eleifend euismod, lectus nunc malesuada nulla, ut auctor magna ipsum vel mi.</p>
+                </div>
+                <div class="post">
+                    <h2>Blog Post 2</h2>
+                    <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.</p>
+                </div>
+            </div>
+
+            <!-- Sidebar Section -->
+            <aside class="sidebar">
+                <h2>About Me</h2>
+                <p>I'm a passionate web developer sharing my thoughts on various tech topics.</p>
+                <h2>Recent Posts</h2>
+                <p>Blog Post 1</p>
+                <p>Blog Post 2</p>
+            </aside>
+        </div>
+
+</div>
+</body>
+</html>
