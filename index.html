@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Styling the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styling the header */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Styling section headings */
+        h2 {
+            color: #2E8B57;
+        }
+
+        /* Styling the navigation links */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Adding padding to sections */
+        section {
+            padding: 20px;
+        }
+
+        /* Inline CSS for hobbies section */
+        #hobbies ul li {
+            color: blue;
+        }
+
+        /* External CSS */
+        link {
+            rel: "stylesheet";
+            href: "styles.css";
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Header -->
+    <header>
+        <h1>Welcome to My Personal Webpage</h1>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm [Your Name]. I'm learning web development and this is my first personal webpage.</p>
+    </section>
+
+    <!-- Hobbies Section (styled with inline CSS) -->
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <p>Here are a few of my favorite hobbies:</p>
+        <ul style="font-style: italic;">
+            <li style="color: blue;">Reading</li>
+            <li style="color: blue;">Playing chess</li>
+            <li style="color: blue;">Listening to music</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to <a href="mailto:your.email@example.com">email me</a>.</p>
+    </section>
+
+    <!-- Navigation Links -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#hobbies">My Hobbies</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
