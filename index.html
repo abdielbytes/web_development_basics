@@ -7,52 +7,76 @@
 
     <!-- Internal CSS for Box Model and Layout -->
     <style>
-        /* General body styling */
+        /* Styling the body */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
+            color: #333;
             margin: 0;
             padding: 0;
         }
 
-        /* Main container */
+        /* Wrapper */
         .container {
             width: 80%;
             margin: 0 auto;
-            background-color: white;
+            background-color: #fff;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        /* Header section */
+        /* Header */
         header {
             background-color: #4CAF50;
             color: white;
+            padding: 10px 0;
             text-align: center;
-            padding: 10px;
         }
 
-        /* Flexbox layout for content */
+        /* Blog title */
+        h1 {
+            margin: 0;
+        }
+
+        /* Blog layout */
         .content {
             display: flex;
             flex-direction: row;
+        }
+
+        /* Main content */
+        .main-content {
+            flex: 2;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-right: 2px solid #ddd;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: #e9ecef;
+        }
+
+        /* Blog post */
+        .post {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
             margin-top: 20px;
         }
 
-        /* Main blog post section */
-        .main-content {
-            flex: 2;
-            padding-right: 20px;
-        }
-
-        /* Blog posts */
-        .post {
-            background-color: #f9f9f9;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            padding: 10px;
-        }
-
+        /* Box Model: Borders, Padding, and Margins */
         .post h2 {
             margin: 0;
             padding: 10px;
@@ -62,73 +86,48 @@
 
         .post p {
             padding: 10px;
+            border: 1px solid #ddd;
             margin: 10px 0;
-            border: 1px solid #ddd;
         }
 
-        /* Sidebar styling */
-        .sidebar {
-            flex: 1;
-            padding-left: 20px;
-            background-color: #e9ecef;
-            border-left: 2px solid #ddd;
-        }
-
-        .sidebar h2 {
-            margin: 0;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        .sidebar p {
-            padding: 10px;
-            border: 1px solid #ddd;
-        }
-
-        /* Footer section */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body>
 
-    <!-- Main Container -->
+    <!-- Page Wrapper -->
     <div class="container">
-        <!-- Header -->
+
+        <!-- Page Header -->
         <header>
-            <h1>Welcome to My Blog</h1>
+            <h1>My Blog</h1>
         </header>
 
-        <!-- Main Content and Sidebar -->
+        <!-- Content Section -->
         <div class="content">
-            <!-- Main Content Section -->
+            <!-- Main Content Area -->
             <div class="main-content">
                 <div class="post">
                     <h2>Blog Post 1</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius, neque ut eleifend euismod, lectus nunc malesuada nulla, ut auctor magna ipsum vel mi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec purus nec lorem blandit convallis.</p>
                 </div>
                 <div class="post">
                     <h2>Blog Post 2</h2>
-                    <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
                 </div>
             </div>
 
-            <!-- Sidebar Section -->
+            <!-- Sidebar -->
             <aside class="sidebar">
                 <h2>About Me</h2>
-                <p>I'm a passionate web developer sharing my thoughts on various tech topics.</p>
-                <h2>Recent Posts</h2>
-                <p>Blog Post 1</p>
-                <p>Blog Post 2</p>
+                <p>Hi, I'm a web developer who loves sharing knowledge about coding and web development. I hope you enjoy reading my blog!</p>
             </aside>
         </div>
 
-</div>
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2024 My Blog. All Rights Reserved.</p>
+        </footer>
+    </div>
+
 </body>
 </html>
